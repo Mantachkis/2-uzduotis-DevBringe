@@ -1,0 +1,80 @@
+.boxes {
+	align-items: center;
+	background-color: #d42627;
+	border: 5px solid #000;
+   border-radius: 3px;
+	display: flex;
+	height: 260px;
+	justify-content: center;
+	position: relative;
+	width: 260px;
+}
+
+.box {
+	background-color: red;
+	height: 100px;
+	position: absolute;
+	width: 100px;
+	z-index: 1;
+}
+
+.box:first-child {
+	background-color: orange;
+	left: 0;
+	top: 0;
+}
+
+.box:nth-child(2) {
+	background-color: green;
+	right: 0;
+	top: 0;
+}
+
+.box:nth-child(3) {
+	background-color: blue;
+	bottom: 0;
+	left: 0;
+}
+
+.box:nth-child(4) {
+	background-color: yellow;
+	bottom: 0;
+	right: 0;
+}
+
+/* Make changes ONLY in the ".rubik" rule! */
+/* Copy/paste ONLY this rule to the test answer! */
+.rubik {
+	display: grid;
+	grid-template-columns: repeat(3, 50px);
+	height: 150px;
+	width: 150px;
+}
+
+.rubik__cell {
+	border: 2px solid black;
+	height: 50px;
+	width: 50px;
+}
+
+.rubik__cell--db {
+	background: url("https://dbcms.s3.amazonaws.com/devbridgecom/bcms/image/3f7b6becdf964153b5fb78625e2ef4d3/db-logo.png") center no-repeat;
+	background-size: contain;
+	transform: rotate(90deg);
+}
+
+.rubik__cell--blue {
+   background-color: blue;
+}
+
+.rubik__cell--orange {
+   background-color: orange;
+}
+
+.rubik__cell--yellow {
+   background-color: yellow;
+}
+
+.rubik__cell--green {
+   background-color: green;
+}
