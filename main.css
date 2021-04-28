@@ -49,6 +49,7 @@
 	grid-template-columns: repeat(3, 50px);
 	height: 150px;
 	width: 150px;
+    z-index: 2;
 }
 
 .rubik__cell {
